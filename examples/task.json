@@ -1,0 +1,13 @@
+{
+  "name": "公开文档入口巡检",
+  "provider": "local",
+  "timeoutMs": 15000,
+  "slowThresholdMs": 3000,
+  "concurrency": 3,
+  "retry": true,
+  "sites": [
+    { "id": "example", "name": "Example Domain", "url": "https://example.com", "group": "公开示例", "expectedText": "Example Domain" },
+    { "id": "playwright", "name": "Playwright 文档", "url": "https://playwright.dev", "group": "开发文档", "expectedText": "Playwright" },
+    { "id": "mdn", "name": "MDN Web 文档", "url": "https://developer.mozilla.org", "group": "开发文档", "expectedText": "" }
+  ]
+}
